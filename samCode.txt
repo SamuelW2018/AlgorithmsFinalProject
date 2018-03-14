@@ -1,0 +1,85 @@
+	cout << "Depth is: " << depth << endl;
+	bool rot4 = true;
+	bool rot2 = true;
+		unsigned long nexBlock = rotate(blockList[pos][0], 0);
+		answer1 = dfs(depth+1, nexPos, clearRows(addBlock(nexBlock, state)), visited);
+		if (rotate(blockList[pos][0], 1) != blockList[pos][0])
+		{
+			unsigned long nexBlock2 = rotate(blockList[pos][0], 1);
+			answer2 = dfs(depth + 1, nexPos, clearRows(addBlock(nexBlock2, state)), visited);
+			if (rotate(blockList[pos][0], 2) != blockList[pos][0])
+			{
+				unsigned long nexBlock3 = rotate(blockList[pos][0], 2);
+				answer3 = dfs(depth + 1, nexPos, clearRows(addBlock(nexBlock3, state)), visited);
+				unsigned long nexBlock4 = rotate(blockList[pos][0], 3);
+				answer4 = dfs(depth + 1, nexPos, clearRows(addBlock(nexBlock4, state)), visited);
+			}
+			else
+			{
+				rot4 = false;
+			}
+		}
+		else
+		{
+			rot2 = false;
+			rot4 = false;
+		}
+
+		if (rot4)
+		{
+			if (answer4 != death)
+				answer = answer4;
+			else if (answer3 != death && answer3 < answer4)
+				answer = answer3;
+			else if (answer2 != death && answer2 < answer3)
+				answer = answer2;
+			else if (answer1 < answer3)
+				answer = answer1;
+			else
+				answer = death;
+		}
+		else if (rot2)
+		{
+			if (answer2 != death)
+				answer = answer2;
+			else if (answer1 < answer2)
+				answer = answer1;
+			else
+				answer = answer1;
+		}
+		else
+			answer = death;
+
+
+
+	if (maxDepth != -1)
+	{
+		cout << maxDepth << endl;
+	}
+	else
+		cout << "Forever" << endl;
+
+
+
+	vector<unsigned long> stateSpace;
+	bool cantLose = false;
+	string charString;
+	cin >> charString;
+
+	for (int i = 0; i < charString.size(); i++)
+	{
+		int a = chooseBlock(charString[i]);
+		vector<unsigned long> temp = blocks[a];
+		blockList.push_back(temp);
+	}
+
+	unsigned long state = 0x000;
+	stateSpace.push_back(state);
+	unsigned long answer = dfs(0, 0, state, stateSpace);
+
+	if (maxDepth != -1)
+	{
+		cout << maxDepth << endl;
+	}
+	else
+		cout << "Forever" << endl;

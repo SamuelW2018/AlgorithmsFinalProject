@@ -1,0 +1,9 @@
+﻿  main.cpp
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_cs473finalproject\fallingblocks_cs473finalproject\main.cpp(67): warning C4018: '<': signed/unsigned mismatch
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_cs473finalproject\fallingblocks_cs473finalproject\main.cpp(69): warning C4018: '<': signed/unsigned mismatch
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_cs473finalproject\fallingblocks_cs473finalproject\main.cpp(80): warning C4018: '<': signed/unsigned mismatch
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_cs473finalproject\fallingblocks_cs473finalproject\main.cpp(82): warning C4018: '<': signed/unsigned mismatch
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_cs473finalproject\fallingblocks_cs473finalproject\main.cpp(199): warning C4018: '<': signed/unsigned mismatch
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_cs473finalproject\fallingblocks_cs473finalproject\main.cpp(255): warning C4018: '>=': signed/unsigned mismatch
+  FallingBlocks_CS473FinalProject.vcxproj -> \\cs1\CS_Projects\2017_CS473_Algorithms\Sam_William\FallingBlocks_CS473FinalProject\Debug\FallingBlocks_CS473FinalProject.exe
+  FallingBlocks_CS473FinalProject.vcxproj -> \\cs1\CS_Projects\2017_CS473_Algorithms\Sam_William\FallingBlocks_CS473FinalProject\Debug\FallingBlocks_CS473FinalProject.pdb (Partial PDB)

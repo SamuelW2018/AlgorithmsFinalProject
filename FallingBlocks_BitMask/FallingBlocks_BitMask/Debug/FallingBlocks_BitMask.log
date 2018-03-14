@@ -1,0 +1,6 @@
+﻿  main.cpp
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_bitmask\fallingblocks_bitmask\main.cpp(61): warning C4244: 'initializing': conversion from 'double' to 'unsigned long', possible loss of data
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_bitmask\fallingblocks_bitmask\main.cpp(157): warning C4018: '<': signed/unsigned mismatch
+\\cs1\cs_projects\2017_cs473_algorithms\sam_william\fallingblocks_bitmask\fallingblocks_bitmask\main.cpp(190): warning C4018: '<': signed/unsigned mismatch
+  FallingBlocks_BitMask.vcxproj -> \\cs1\CS_Projects\2017_CS473_Algorithms\Sam_William\FallingBlocks_BitMask\Debug\FallingBlocks_BitMask.exe
+  FallingBlocks_BitMask.vcxproj -> \\cs1\CS_Projects\2017_CS473_Algorithms\Sam_William\FallingBlocks_BitMask\Debug\FallingBlocks_BitMask.pdb (Partial PDB)
